@@ -3,13 +3,15 @@ const boton = document.querySelector(".boton");
 const botonImprimir = document.querySelector(".botonImprimir");
 const dragArea = document.querySelector(".contenedorPrincipal");
 
+
+// Función que realiza la animación de los elementos.
 new Sortable(dragArea, {
   Animation: 350
 })
 
 
 
-
+// Configuración de los botones
 botonImprimir.onclick = function () {
   print();
 };
@@ -19,6 +21,7 @@ boton.onclick = function () {
 };
 
 
+// Función principal que crea de forma dinámica los elementos.
 function mostrarMensaje() {
   const nav = document.querySelector("nav");
 
