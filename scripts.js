@@ -7,6 +7,9 @@ new Sortable(dragArea, {
   Animation: 350
 })
 
+
+
+
 botonImprimir.onclick = function () {
   print();
 };
@@ -22,7 +25,6 @@ function mostrarMensaje() {
   const panel = document.createElement("div");
   nav.appendChild(panel);
   panel.setAttribute("class", "contenedorVirtual");
-  panel.setAttribute("draggable", "true");
 
   const mensaje = document.createElement("p");
   mensaje.textContent = input.value;

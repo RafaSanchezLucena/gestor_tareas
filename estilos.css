@@ -1,24 +1,20 @@
 html {
   font-family:Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
 }
 
 body {
   width: 80%;
   margin: 0 auto;
-  padding: 1px;
 }
 
 .cabecera {
-  align-items: center;
   text-align: center;
-  height: 80px;
   width: 100;
   margin-bottom: 10px;
-  justify-content: center;
 }
 
 .titulo {
+  margin:15px auto;
   font-size: 3.5em;
   font-style: italic;
 }
@@ -36,13 +32,13 @@ body {
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 1em;
-  box-shadow: 0 3px 6px black;
+  box-shadow: 0 3px 3px black;
+  background-color: #c1e1e2;
   cursor: pointer;
-  background-color: rgb(230, 241, 178);
 }
 
 .contenedorVirtual:hover {
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 15px rgb(63, 59, 59);
 
 }
 
@@ -56,7 +52,6 @@ body {
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   vertical-align: middle;
   background-color: #f5f5f5;
-  background-repeat: repeat-x;
   border: 1px solid #cccccc;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
@@ -74,7 +69,6 @@ body {
   vertical-align: middle;
   cursor: pointer;
   background-color: #f5f5f5;
-  background-repeat: repeat-x;
   border: 1px solid #cccccc;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
@@ -93,7 +87,6 @@ body {
   vertical-align: middle;
   cursor: pointer;
   background-color: #f5f5f5;
-  background-repeat: repeat-x;
   border: 1px solid #cccccc;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
@@ -126,9 +119,7 @@ body {
   vertical-align: middle;
   cursor: pointer;
   background-color: #f5f5f5;
-  background-repeat: repeat-x;
   border: 1px solid #cccccc;
-  *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-radius: 50%;
   
