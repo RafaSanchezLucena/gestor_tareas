@@ -9,7 +9,10 @@ new Sortable(dragArea, {
   Animation: 350
 })
 
-
+// Pregunta si estamos seguros de cerrar la aplicación.
+window.addEventListener("beforeunload", function (event) {
+  event.returnValue = "Salir";
+});
 
 // Configuración de los botones
 botonImprimir.onclick = function () {
