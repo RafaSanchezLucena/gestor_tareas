@@ -1,5 +1,5 @@
 const input = document.querySelector("input");
-const boton = document.querySelector(".boton");
+const botonGuardar = document.querySelector(".boton");
 const botonImprimir = document.querySelector(".botonImprimir");
 const dragArea = document.querySelector(".contenedorPrincipal");
 
@@ -7,7 +7,7 @@ const dragArea = document.querySelector(".contenedorPrincipal");
 // Función que realiza la animación de los elementos.
 new Sortable(dragArea, {
   Animation: 350
-})
+});
 
 // Pregunta si estamos seguros de cerrar la aplicación.
 window.addEventListener("beforeunload", function (event) {
@@ -15,13 +15,13 @@ window.addEventListener("beforeunload", function (event) {
 });
 
 // Configuración de los botones
-botonImprimir.onclick = function () {
+botonImprimir.addEventListener("click", ()=>{
   print();
-};
+})
 
-boton.onclick = function () {
+botonGuardar.addEventListener("click", ()=>{
   mostrarMensaje();
-};
+})
 
 
 // Función principal que crea de forma dinámica los elementos.
@@ -37,12 +37,12 @@ function mostrarMensaje() {
   panel.appendChild(mensaje);
   mensaje.setAttribute("class", "parrafo");
 
-  const cerrarBoton = document.createElement("button");
-  cerrarBoton.textContent = "x";
-  panel.appendChild(cerrarBoton);
-  cerrarBoton.setAttribute("class", "botonCerrar");
+  const botonCerrar = document.createElement("button");
+  botonCerrar.textContent = "x";
+  panel.appendChild(botonCerrar);
+  botonCerrar.setAttribute("class", "botonCerrar");
 
-  cerrarBoton.onclick = function () {
+  botonCerrar.addEventListener("click", ()=>{
     panel.parentNode.removeChild(panel);
-  };
+  })
 }
